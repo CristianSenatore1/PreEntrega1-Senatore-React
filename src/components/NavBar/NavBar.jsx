@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget"
 import "./navBar.css"
-
+import { Link } from "react-router-dom"
 
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
             <ul className="lista-menu">
                 <a role="button" data-bs-toggle="dropdown" aria-expanded="true">Autos</a>
                 <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">0 kms</a></li>
+                    <Link to="/category/0kms"><a className="dropdown-item" href="#">0 kms</a></Link>
                     <li><a className="dropdown-item" href="#">Usados</a></li>
                     <li><a className="dropdown-item" href="#">Alquiler</a></li></ul>
                 <a role="button" >Servicios</a>
