@@ -1,0 +1,86 @@
+/* Item.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten en la siguiente fila si no hay suficiente espacio */
+    gap: 5px;
+    /* Espacio entre las tarjetas */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    box-shadow: beige;
+    ;
+}
+
+.item {
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 calc(25% - 32px);
+    /* Tres tarjetas por fila con un espacio de 16px a cada lado */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total del elemento */
+    margin: 12px;
+    /* Espacio alrededor de cada tarjeta */
+    max-width: calc(33.333% - 32px);
+    padding: 16px;
+    /* Añadir padding interno */
+    background: #fff;
+    /* Fondo blanco para la tarjeta */
+    border: 1px solid #ddd;
+    /* Borde ligero */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item.expand {
+    transform: scale(1.1);
+}
+
+.image-item {
+    width: 100%;
+    /* Ajusta la imagen al ancho de la tarjeta */
+    border-bottom: 1px solid #ddd;
+    /* Línea divisoria entre imagen y contenido */
+    padding-bottom: 8px;
+}
+
+.content-item {
+    padding-top: 8px;
+    color: black;
+    /* Puedes agregar más estilos aquí según sea necesario */
+}
+
+.button-item {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background: #013163;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background 0.3s ease;
+    /* Estilos para el botón de detalles */
+}
+
+.button-item:hover {
+    background: #029204; /* Color de fondo al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 32px);
+        /* Dos tarjetas por fila en pantallas medianas */
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 calc(100% - 32px);
+        /* Una tarjeta por fila en pantallas pequeñas */
+        max-width: calc(100% - 32px);
+    }
+}

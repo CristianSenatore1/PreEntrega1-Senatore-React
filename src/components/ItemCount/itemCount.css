@@ -1,0 +1,51 @@
+.itemcount {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .controls-itemcount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-controls {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .button-controls:hover {
+    background-color: #ccc;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+  
+  .submit-itemcount {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-itemcount:hover {
+    background-color: #0056b3;
+  }
+  

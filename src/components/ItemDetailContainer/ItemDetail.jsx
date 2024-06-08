@@ -1,10 +1,18 @@
+import ItemCount from "../ItemCount/ItemCount";
+import "../ItemCount/itemCount.css";
+
 const ItemDetail = ({product}) => {
   return (
-    <div style={{ display: "flex" }}>
-      <img style={{ width: "400px" }} src={product.img} />
-      <div>
-        <p>nombre : {product.nombre}</p>
-        <p>Precio : {product.precio}</p>
+    <div className= "item-detail" /*style={{ display: "flex" }}*/>
+      <div className="image-detail">
+        <img src={product.img} />
+
+      </div>
+
+      <div className="content-detail">
+        <p className="name-detail">{product.nombre}</p>
+        <p className="text-detail">Precio : ${product.precio}</p>
+        <ItemCount stock={product.stock}/>
       </div>
     </div>
   );
